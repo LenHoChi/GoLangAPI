@@ -40,3 +40,12 @@ func ServerErrorRenderer(err error) *ErrorResponse {
 		Message: err.Error(),
 	}
 }
+
+func Ok(err error) *ErrorResponse {
+	return &ErrorResponse{
+		Err: err,
+		StatusCode: 200,
+		StatusText: "update ok",
+		Message: err.Error(),
+	}
+}

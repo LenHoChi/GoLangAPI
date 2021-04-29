@@ -8,7 +8,7 @@ import (
 type Item struct {
 	Name string `json:"name`
 	Description string `json:"description"`
-	Len string `json"len"`
+	// Len string `json"len"`
 }
 
 type ItemList struct {
